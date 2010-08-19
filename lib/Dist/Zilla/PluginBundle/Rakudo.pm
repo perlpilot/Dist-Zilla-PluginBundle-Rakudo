@@ -2,7 +2,7 @@ package Dist::Zilla::PluginBundle::Rakudo;
 # ABSTRACT: Bundle of plugins needed for building a rakudo distribution
 use Moose;
 use namespace::autoclean;
-with qw/ Dist::Zilla::Role:PluginBundle::Easy /;
+with qw/ Dist::Zilla::Role::PluginBundle::Easy /;
 
 sub configure {
     my $self = shift;
@@ -22,3 +22,25 @@ sub configure {
  
 __PACKAGE__->meta->make_immutable;
 1;
+
+__END__
+=pod
+
+=head1 NAME
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 AUTHOR
+
+Jonathan Scott Duff <duff@pobox.com>
+
+=head1 COPYRIGHT
+
+This software is copyright (c) 2010 by Jonathan Scott Duff
+
+This is free sofware; you can redistribute it and/or modify it under the
+same terms as the Perl 5 programming language itself.
+
+=cut
